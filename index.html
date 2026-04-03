@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Solutions | Excellence in Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">NEXUS <span>SOLUTIONS</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact" class="btn-nav">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Innovating Your <span class="highlight">Digital Future</span></h1>
+            <p>Hum aapke business ko modern technology aur creative design ke saath bulandiyon tak pohnchate hain.</p>
+            <div class="hero-btns">
+                <a href="#services" class="btn-primary">Our Services</a>
+                <a href="#contact" class="btn-secondary">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services reveal">
+        <h2 class="section-title">Our Expertise</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Web Development</h3>
+                <p>Modern aur fast loading websites jo har device par fit banti hain.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Digital Marketing</h3>
+                <p>Aapke brand ki reach barhanay ke liye behtareen marketing strategies.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-pen-nib"></i>
+                <h3>UI/UX Design</h3>
+                <p>User-friendly designs jo dekhne mein khubsurat aur chalane mein asaan hon.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+    <div class="stat-item">
+        <h3>150+</h3>
+        <p>Projects Done</p>
+    </div>
+    <div class="stat-item">
+        <h3>80+</h3>
+        <p>Happy Clients</p>
+    </div>
+    <div class="stat-item">
+        <h3>5+</h3>
+        <p>Years Experience</p>
+    </div>
+</section>
+
+<section id="portfolio" class="portfolio reveal">
+    <h2 class="section-title">Our Recent Work</h2>
+    <div class="portfolio-grid">
+        <div class="project-box" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=500');">
+            <div class="overlay"><h4>E-Commerce App</h4></div>
+        </div>
+        <div class="project-box" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=500');">
+            <div class="overlay"><h4>Business Dashboard</h4></div>
+        </div>
+        <div class="project-box" style="background-image: url('https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=500');">
+            <div class="overlay"><h4>Modern UI Design</h4></div>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials" class="testimonials reveal">
+    <h2 class="section-title">What Our Clients Say</h2>
+    <div class="testimonials-container">
+        <div class="testimonial-card">
+            <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p>"Nexus Solutions ne hamari website ko bilkul badal diya. Unka kaam bhot professional aur fast hai."</p>
+            <div class="client-info">
+                <h4>Ali Raza</h4>
+                <span>CEO, Tech Hub</span>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p>"Inki digital marketing strategy se hamari sales mein 40% izafa hua. Highly recommended!"</p>
+            <div class="client-info">
+                <h4>Sara Khan</h4>
+                <span>Marketing Director</span>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+            </div>
+            <p>"Design itna modern aur clean hai ke har koi tareef kar raha hai. Best experience ever."</p>
+            <div class="client-info">
+                <h4>Usman Ahmed</h4>
+                <span>Founder, Luxe Style</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact reveal">
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="contact-container">
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5"></textarea>
+            <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+    </div>
+</section>
+
+    <footer>
+        <p>&copy; 2026 Nexus Solutions. All Rights Reserved.</p>
+    </footer>
+
+<script>
+    window.addEventListener('scroll', reveal);
+
+    function reveal() {
+        var reveals = document.querySelectorAll('.reveal');
+
+        for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var revealTop = reveals[i].getBoundingClientRect().top;
+            var revealPoint = 150;
+
+            if (revealTop < windowHeight - revealPoint) {
+                reveals[i].classList.add('active');
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
